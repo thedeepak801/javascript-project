@@ -1,74 +1,74 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-    letter-spacing: 1px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    min-height: 100vh;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* display: grid;
-    place-items: center; */
-    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+body {
+  background-color: #548687;
+  text-align: center;
 }
 
-.calculator{
-    padding: 15px;
-    box-shadow: 0 0 15px #000;
-    border: 2px solid rgb(116,114,114);
-    border-radius: 15px;
+.container {
+  height: 70vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
 }
 
-.display input{
-    width: 360px;
-    border: none;
-    outline: none;
-    padding: 20px;
-    margin: 10px;
-    background: transparent;
-    color: #fff;
-    font-size: 40px;
-    text-align: right;
-    cursor: pointer;
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
 }
 
-input::placeholder{
-    color: #fff;
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  font-size: 8vmin;
+  color: #b0413e;
+  background-color: #ffffc7;
 }
 
-button{
-    width: 70px;
-    height: 70px;
-    margin: 10px;
-    background: transparent;
-    color: #fff;
-    font-size: 22px;
-    font-weight: 600;
-    border: 0;
-    border-radius: 50%;
-    box-shadow: -5px -6px 15px #000;
-    outline: 1px solid #313131;
-    outline-offset: 3px;
-    cursor: pointer;
+#reset-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
 }
 
-button:active{
-    background: #000;
-    transform: translate(2px, 2px);
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #191913;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
 }
 
-.opr{
-    color: #fbff00;
-    background: #1e1919;
-    font-weight: 700;
+#msg {
+  color: #ffffc7;
+  font-size: 5vmin;
 }
 
-#eqBtn{
-    background: orangered;
-    font-weight: 900;
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hide {
+  display: none;
 }
